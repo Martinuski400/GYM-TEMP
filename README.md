@@ -3,8 +3,11 @@ Este proyecto consiste en una aplicación móvil diseñada específicamente para
 Características Principales:
 
 **Personalización Flexible:** Permite ajustar los segundos de duración tanto para los intervalos de ejercicio como para los de descanso.
+
 **Interfaz Intuitiva:** Diseño sencillo y fácil de usar para una experiencia sin complicaciones durante el entrenamiento.
+
 **Notificaciones y Alarmas:** Alertas visuales y auditivas para indicar el inicio y finalización de cada intervalo.
+
 **Guardado de Configuraciones:** Capacidad para guardar configuraciones favoritas para futuras sesiones de entrenamiento.
 
 Contribuciones y Uso:
