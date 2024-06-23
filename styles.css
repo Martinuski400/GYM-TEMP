@@ -8,15 +8,27 @@ body {
     background-color: #f0f0f0;
     font-family: 'Arial', sans-serif;
     margin: 0;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
 }
 
 .timer-container {
     text-align: center;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode .timer-container {
+    background: #444;
+    color: #f0f0f0;
 }
 
 @keyframes fadeIn {
@@ -38,7 +50,7 @@ body {
 }
 
 #timer {
-    font-size: 2rem;
+    font-size: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -47,18 +59,18 @@ body {
 }
 
 #status {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 10px 0;
-    color: #007bff;
+    color: #ff4500;
     transition: color 0.5s;
 }
 
 #status.rest {
-    color: #ff0000;
+    color: #32cd32;
 }
 
 #repetition-counter {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 10px 0;
     color: #555;
 }
@@ -82,22 +94,50 @@ body {
 }
 
 .buttons button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
     margin: 5px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    border-radius: 50px;
+    background-color: #ff4500;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .buttons button:hover {
-    background-color: #0056b3;
+    background-color: #d83f00;
 }
 
 .buttons button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+.history {
+    margin-top: 20px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    margin: 5px 0;
+}
+
+#toggle-dark-mode {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #555;
 }
